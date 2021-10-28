@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>MI 349 Blog Page</title>
 </head>
 <body>
@@ -19,9 +20,9 @@
         </ul>
     </nav>
 
-    <main>
+    <main id="blog">
 
-        <article>
+        <article class="blog-post">
             <h2>Game Review: Payday 2</h2>
 
             <p><img src="Payday2.PNG" alt="The payday 2 logo."></p>
@@ -39,7 +40,7 @@
             <p>Overall, Payday 2 creates an exciting heisting experience. Clearing out banks like James Bond with a group of friends will never get old. The numerous ways to approach each level provides players with numerous scenarios to experience. </p>
         </article>
 
-        <article>
+        <article class="blog-post">
             <h2>Game Review: Outward</h2>
 
             <p><img src="Outward.jpg" width=576 height=324 alt="A screenshot of me fighting the Royal Manticore in Outward."></p>
@@ -91,9 +92,9 @@
         <h2>Email Notifications</h2>
         <form>
             <label>Sign up for our newsletter:
-                <input type="text">
+                <input type="text" required>
             </label>
-            <button>Subscribe</button>
+            <button data-buttontype="submission">Subscribe</button>
         </form>
     </section>
 

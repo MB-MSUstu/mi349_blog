@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>MI 349 Blog Page</title>
 </head>
 <body>
@@ -23,27 +24,27 @@
         <h2>Contact Form</h2>
         <form>
             <div>
-                <label>Name: </label>
+                <label data-needed="true">Name: </label>
                 <input type="text" required>
             </div>
             <div>
-                <label>Email Address: </label>
+                <label data-needed="true">Email Address: </label>
                 <input type="email" required>
             </div>
             <div>
-                <label>Reason for Contact: </label>
+                <label data-needed="false">Reason for Contact: </label>
                 <select>
                     <option selected disabled hidden>Select a Reason</option>
                     <option>Saying Hi</option>
-                    <option>Lokking for a Contractor</option>
+                    <option>Looking for a Contractor</option>
                     <option>Interested in an interview</option>
                 </select>
             </div>
             <div>
-                <label>Other Comments: </label>
+                <label data-needed="false">Other Comments: </label>
                 <input type="text">
             </div>
-            <button>Submit</button>
+            <button data-buttontype="submission">Submit</button>
         </form>
     </section>
 </body>
