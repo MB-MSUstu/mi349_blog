@@ -14,6 +14,7 @@ body{
 h1{
     font-size: 3em;
     margin: 0;
+    text-align: center;
 }
 
 p{
@@ -69,6 +70,7 @@ label{
 .blog-post{
     background: rgb(207, 207, 207);
     border: 5px solid #242424;
+    box-shadow: rgba(0,0,0, 0.1) 0 10px 10px;
     padding: 20px;
     padding-top: 5px;
     margin: 20px;
@@ -81,4 +83,72 @@ label{
 
 #blogs:nth-of-type(2){
     flex: 1;
+}
+
+.card{
+    background: rgb(207, 207, 207);
+    border: 2px solid #4b4b4b;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 5px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: rgba(0,0,0, 0.1) 0 3px 3px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+@media (max-width: 400px){
+    h1{
+        font-size: 2em;
+    }
+
+    h2{
+        font-size: 1.2em;
+    }
+
+    h3{
+        font-size: 0.95em;
+    }
+
+    th{
+        font-size: 0.85em;
+    }
+
+    td{
+        font-size: 0.75em;
+    }
+
+    p{
+        font-size: 0.75em;
+    }
+
+    figcaption{
+        font-size: 0.75em;
+    }
+
+    img.payday{
+        width: 208px;
+        height: 79px;
+    }
+
+    img.outward{
+        width: 230px;
+        height: 130px;
+    }
+
+    img.me{
+        width: 80px;
+        height: 120px;
+    }
+
+    #blogs{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
